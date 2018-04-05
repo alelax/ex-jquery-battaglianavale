@@ -38,13 +38,15 @@ $(document).ready(function(){
 //un array contenente gli indici dei quadrati ai quali sono state assegnate le bombe
 function distributeBombs() {
    var bombs = new Array();
-   for (var i = 0; i < 15; i++) {
+   var i = 0;
+   do {
       var whatIsAbomb = randomNumber(0, 63);
-      if (  !(bombs.includes(whatIsAbomb)) ) {
+      if ( !(bombs.includes(whatIsAbomb)) ) {
          bombs.push(whatIsAbomb);
+         i++;
       }
-   }
-   // console.log(bombs);
+   } while ( i < 15 )
+   console.log(bombs);
    return bombs;
 }
 

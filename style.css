@@ -31,9 +31,6 @@ main {
    transform: translateY(-50%);
    line-height: 70px;
    font-size: 18px;
-}
-
-.counter:not(.counter span) {
    writing-mode: vertical-rl;
    text-orientation: upright;
 }
@@ -54,6 +51,7 @@ main {
    width: 70px;
    height: 70px;
    background-color: rgb(32, 217, 16);
+   writing-mode: horizontal-tb;
    text-orientation: unset;
 }
 
@@ -65,6 +63,8 @@ main {
    width: 70px;
    height: 70px;
    background-color: rgb(217, 16, 16);
+   writing-mode: horizontal-tb;
+   
 }
 
 

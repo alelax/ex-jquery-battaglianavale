@@ -22,3 +22,52 @@ main {
 .grid-item {
    border: 1px solid black;
 }
+
+.counter {
+   width: 70px;
+   height: 250px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   line-height: 70px;
+   font-size: 18px;
+   writing-mode: vertical-rl;
+   text-orientation: upright;
+}
+
+#points {
+   left: 23%;
+}
+
+#bombs {
+   right: 23%;
+}
+
+#scores {
+   display: inline-block;
+   text-align: center;
+   border-radius: 50%;
+   font-size: 40px;
+   width: 70px;
+   height: 70px;
+   background-color: rgb(32, 217, 16);
+   text-orientation: unset;
+}
+
+#fauls {
+   display: inline-block;
+   text-align: center;
+   border-radius: 50%;
+   font-size: 40px;
+   width: 70px;
+   height: 70px;
+   background-color: rgb(217, 16, 16);
+}
+
+
+.bg-green {
+   background-color: green;
+}
+.bg-red {
+   background-color: red;
+}

@@ -15,20 +15,21 @@ $(document).ready(function(){
       var id = parseInt(this.id);
 
       if ( bombs.includes(id) ) {
-         $(this).addClass('bg-red');
-         updateScores('bg-red');
-         //updateBombs();
+
+         if ( !($(this).hasClass('bg-red')) ) {
+            $(this).addClass('bg-red');
+            updateScores('bg-red');
+            //updateBombs();
+         }
       } else {
-         $(this).addClass('bg-green');
-         updateScores('bg-green');
-         //updatePoints();
+         if ( !($(this).hasClass('bg-green')) ) {
+            $(this).addClass('bg-green');
+            updateScores('bg-green');
+            //updatePoints();
+         }
       }
 
    });
-
-
-
-
 
 });
 
